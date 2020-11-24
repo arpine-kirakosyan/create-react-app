@@ -2,7 +2,7 @@
     background: #fff;
     border-radius: 10px;
     width: 40%;
-    height: 150px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,18 +39,45 @@
     border: 1px solid #8c5592;
     margin: 10px;
     border-radius: 5px;
+    height: 30px;
 
 }
-.counter-box__content  button{
+.counter-box  button{
     background: #fff;
     border: 1px solid #989898;
-    border-radius: 5px;
-    padding: 5px 10px;
+    border-radius: 5px;   
     cursor:pointer;
+    color:#fff;
+    width: 30px;
+    height: 30px;
 }
-.counter-box__content  button:hover{
+.counter-box button.reset-btn{
+    margin:20px 0;
+    color:#000;
+    width: max-content;
+    height: 30px;
+}
+.counter-box__content  button.decrease-btn{
+    background: coral;
+
+}
+.counter-box__content .decrease-btn.disabled{
+    pointer-events: none;
+
+
+}
+.counter-box__content  button.decrease-btn:hover{
+    background: #d24512;
+}
+.counter-box__content  button.increase-btn{
+    background:#a7d6a7;
+}
+.counter-box__content  button.increase-btn:hover{
+    background: #4e8a4e;
+}
+.counter-box  button:hover{
     box-shadow: 0px 0px 5px -2px rgba(0,0,0,.5);
 }
-.counter-box__content  button:focus{
+.counter-box button:focus{
     outline:none;
 }
